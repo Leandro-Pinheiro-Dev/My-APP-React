@@ -4,7 +4,7 @@
 Projeto desenvolvido para estudo de **React Router**, **Styled-Components** e publicação com **GitHub Pages**.
 
 👉 Acesse online:
-**[https://Leandro-Pinheiro-Dev.github.io/my-app](https://Leandro-Pinheiro-Dev.github.io/my-app)**
+**[https://Leandro-Pinheiro-Dev.github.io/My-APP-React](https://Leandro-Pinheiro-Dev.github.io/My-APP-React)**
 
 ---
 
