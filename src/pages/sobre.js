@@ -1,15 +1,26 @@
-import React from "react";
+import styled from "styled-components";
 
-const Sobre = () => {
+const Container = styled.div`
+  max-width: 900px;
+  margin: 80px auto;
+  color: white;
+  padding: 20px;
+`;
+
+const Title = styled.h1`
+  color: #22c55e;
+  margin-bottom: 20px;
+`;
+
+export default function Sobre() {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Sobre</h1>
+    <Container>
+      <Title>Sobre mim</Title>
       <p>
-        Este projeto foi criado para praticar React Router, componentes
-        reutilizáveis e styled-components.
+        Sou estudante de Sistemas Embarcados e desenvolvedor full-stack. Este
+        site foi criado como prática de React e deploy.
       </p>
-    </div>
+      <p>Tecnologias: React, Node.js, Python, IoT e Banco de Dados.</p>
+    </Container>
   );
-};
-
-export default Sobre;
+}

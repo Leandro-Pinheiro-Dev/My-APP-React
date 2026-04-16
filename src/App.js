@@ -1,27 +1,17 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
-
-import Home from "./pages/home";
-import Sobre from "./pages/sobre";
-import Contato from "./pages/contato";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header />
+    <div className="app">
+      <div className="card">
+        <h1>Meu Primeiro Deploy</h1>
+        <p>
+          Este site está rodando no <strong>GitHub Pages</strong>!
+        </p>
 
-      <main style={{ minHeight: "80vh" }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/contato" element={<Contato />} />
-        </Routes>
-      </main>
-
-      <Footer />
-    </>
+        <button className="btn">Saiba mais</button>
+      </div>
+    </div>
   );
 }
 

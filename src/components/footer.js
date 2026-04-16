@@ -1,15 +1,13 @@
-import React from "react";
 import styled from "styled-components";
 
-const Rodape = styled.footer`
+const Foot = styled.footer`
   background: #020617;
-  color: white;
+  padding: 30px;
   text-align: center;
-  padding: 25px;
+  margin-top: 60px;
+  color: #94a3b8;
 `;
 
-const Footer = () => {
-  return <Rodape>© 2026 - MeuSite. Todos os direitos reservados.</Rodape>;
-};
-
-export default Footer;
+export default function Footer() {
+  return <Foot>© 2026 • Desenvolvido por Leandro</Foot>;
+}

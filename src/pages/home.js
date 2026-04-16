@@ -1,23 +1,53 @@
-import React from "react";
 import styled from "styled-components";
 
 const Hero = styled.section`
-  padding: 100px 40px;
+  height: 90vh;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  color: white;
+  padding: 20px;
 `;
 
 const Title = styled.h1`
-  color: #31e636;
-  font-size: 48px;
+  font-size: 60px;
+  color: #22c55e;
 `;
 
-const Home = () => {
+const Text = styled.p`
+  max-width: 600px;
+  font-size: 20px;
+  margin: 20px 0;
+  color: #cbd5e1;
+`;
+
+const Button = styled.button`
+  padding: 15px 35px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #16a34a;
+  }
+`;
+
+export default function Home() {
   return (
     <Hero>
-      <Title>Bem-vindo ao MeuSite </Title>
-      <p>Projeto React com rotas e componentes reutilizáveis.</p>
+      <Title>Portfólio React</Title>
+      <Text>
+        Site criado para praticar React Router, Styled Components e publicação
+        no GitHub Pages.
+      </Text>
+      <Button>Ver Projetos</Button>
     </Hero>
   );
-};
-
-export default Home;
+}
